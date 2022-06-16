@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: restaurant-server
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: restaurant-server
+  template:
+    metadata:
+      labels:
+        app: restaurant-server
+    spec:
+      containers:
+      - image: docker.io/codefriar/restaurants:latest
+        name: restaurant-server
+        ports:
+        - containerPort: 5001

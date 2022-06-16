@@ -1,0 +1,19 @@
+POST http://localhost:5001/record/add
+
+###
+GET http://localhost:5001/restaurants
+
+### 
+GET http://localhost:5001/restaurants/search/Kosher
+
+###
+GET http://localhost:5001/restaurants/facets/cuisine
+
+###
+GET http://localhost:5001/restaurants/facets/borough
+
+### 
+GET http://localhost:5001/restaurant/facet/Taco%20Bell
+
+### 
+GET http://localhost:5001/restaurant/facet/taco/*/*
