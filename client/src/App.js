@@ -88,7 +88,7 @@ function App() {
       <AppBar color="primary" position="static">
         <Toolbar>
           <Typography variant="h3" color="inherit">
-            NYC Restaurant Search
+            NYC Restaurant Search Application for Demo
           </Typography>
         </Toolbar>
       </AppBar>
